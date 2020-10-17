@@ -19,6 +19,7 @@
         justify-content: space-between;
         padding-top: 60px;
       }
+      /* скрываем части div, которые не помещаются в заданные размеры */
       section div {
         width: 60%;
         overflow: hidden;
@@ -32,16 +33,18 @@
       section h1 {
         font-size: 42px;
         margin-top: 74px;
-        margin-hight: 44px;
+        height: 44px;
         margin-bottom: 24px;
       }
       section p {
         font-size: 26px;
         line-height: 38px;
       }
+      /* второй див в section */
       section div:nth-of-type(2) {
         margin-left: 80px;
       }
+      /* h1 и p второго section */
       section:nth-last-of-type(2) h1,
       section:nth-last-of-type(2) p {
         margin-left: 0px;
@@ -124,7 +127,7 @@
 
     <section class="buttom_block">
       <h1>Возможность самостоятельного и курируемого обучения</h1>
-      <p></p>
+      <p>Вы можете обучаться самостоятельно по исходному коду проекта,<br>выложенному на GutHub, или записаться на курс<br>веб-верстки Школы Дизайна НИУ ВШЭ</p>
       <a class="btn" href="#">Исходный код на GitHub</a>
       <a class="btn btn_black" href="#">Курс в Школе Дизайна</a>
     </section>
